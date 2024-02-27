@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appId</key>
+	<string>devicesync-jizwf</string>
+	<key>appUrl</key>
+	<string>https://realm.mongodb.com/groups/65dbc8f27a578a62027bab4f/apps/65dbccbd096d3051f1c3e084</string>
+	<key>baseUrl</key>
+	<string>https://realm.mongodb.com</string>
+	<key>clientApiBaseUrl</key>
+	<string>https://us-east-1.aws.realm.mongodb.com</string>
+	<key>dataApiBaseUrl</key>
+	<string>https://us-east-1.aws.data.mongodb-api.com</string>
+	<key>dataExplorerLink</key>
+	<string>https://cloud.mongodb.com/links/65dbc8f27a578a62027bab4f/explorer/Cluster0/database/collection/find</string>
+	<key>dataSourceName</key>
+	<string>mongodb-atlas</string>
+</dict>
+</plist>
