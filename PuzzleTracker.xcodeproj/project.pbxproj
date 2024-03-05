@@ -42,6 +42,7 @@
 		068985912B547A6800727341 /* LeaderboardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068985902B547A6800727341 /* LeaderboardRow.swift */; };
 		068985932B54D16500727341 /* OrderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068985922B54D16500727341 /* OrderRow.swift */; };
 		06A3918D2AAE672F00DA4682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A3918C2AAE672E00DA4682 /* LaunchScreen.storyboard */; };
+		06A6BE822B97CD45008E25AA /* PuzzleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A6BE812B97CD45008E25AA /* PuzzleRow.swift */; };
 		06B133CB2AC3CF8E00557AC1 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B133CA2AC3CF8E00557AC1 /* SearchUserView.swift */; };
 		06B133CD2AC3D09600557AC1 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B133CC2AC3D09600557AC1 /* UserRow.swift */; };
 		06B90F9F2AAE6B63009B289F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90F9E2AAE6B63009B289F /* Course.swift */; };
@@ -110,6 +111,7 @@
 		068985902B547A6800727341 /* LeaderboardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardRow.swift; sourceTree = "<group>"; };
 		068985922B54D16500727341 /* OrderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRow.swift; sourceTree = "<group>"; };
 		06A3918C2AAE672E00DA4682 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06A6BE812B97CD45008E25AA /* PuzzleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleRow.swift; sourceTree = "<group>"; };
 		06B133CA2AC3CF8E00557AC1 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
 		06B133CC2AC3D09600557AC1 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 		06B90F9E2AAE6B63009B289F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				068479262B8DA7E9000749E7 /* PuzzleList.swift */,
+				06A6BE812B97CD45008E25AA /* PuzzleRow.swift */,
 			);
 			path = Puzzles;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				066ABB142AD61890006AF399 /* TimerView.swift in Sources */,
 				0612D7F92AB5650E00482B51 /* IconView.swift in Sources */,
 				068985932B54D16500727341 /* OrderRow.swift in Sources */,
+				06A6BE822B97CD45008E25AA /* PuzzleRow.swift in Sources */,
 				0656F64B2AB25FEC006D8715 /* TrainingList.swift in Sources */,
 				0612D7F42AB504C900482B51 /* Enums.swift in Sources */,
 				917097E027A05F3E00F1D65B /* CourseDetail.swift in Sources */,

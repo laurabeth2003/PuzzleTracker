@@ -11,10 +11,10 @@ import RealmSwift
 /// View a list of all Puzzles in the realm. User can swipe to delete Puzzles.
 struct PuzzleList: View {
     /// Determines if the view is in Preview Mode
-    @Environment(\.isInCoursePreview) var isInPuzzlePreview
+    @Environment(\.isInPuzzlePreview) var isInPuzzlePreview
     /// Collection of all Puzzle objects in the realm sorted by createDate
     @ObservedResults(PuzzleEntry.self, sortDescriptor: SortDescriptor(keyPath: "createDate", ascending: true)) var entries
-    var courseArray = Course.coursePreview
+    var entryArray = PuzzleEntry.entryPreview
     
     var body: some View {
         ZStack {
@@ -25,23 +25,23 @@ struct PuzzleList: View {
                 .ignoresSafeArea()
             VStack {
                 List {
-                    /// render course preview data if isInCoursePreview is true
-                    if isInCoursePreview {
-                        ForEach(courseArray) { course in
-                            CourseRow(course: course)
+                    /// render puzzle preview data if isInPuzzlePreview is true
+                    if isInPuzzlePreview {
+                        ForEach(entryArray) { entry in
+                            PuzzleRow(puzzleEntry: entry)
                                 .listRowBackground(Color.clear)
                                 .listRowSeparator(.hidden)
-                                .listRowInsets(EdgeInsets(top: 7, leading: 17, bottom: 0, trailing: 17))
+                                .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                         }
-                    /// render render data if isInCoursePreview is false
+                    /// render render data if isInPuzzlePreview is false
                     } else {
-                        ForEach(courses) { course in
-                            CourseRow(course: course)
+                        ForEach(entries) { entry in
+                            PuzzleRow(puzzleEntry: entry)
                                 .listRowBackground(Color.clear)
                                 .listRowSeparator(.hidden)
-                                .listRowInsets(EdgeInsets(top: 7, leading: 17, bottom: 0, trailing: 17))
+                                .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                         }
-                        .onDelete(perform: $courses.remove)
+                        .onDelete(perform: $entries.remove)
                     }
                 }
                 .padding(.top, 10)
